@@ -76,3 +76,17 @@
         });
     });
 })();
+
+(function () {
+    "use strict";
+    var select = document.getElementById("car");
+    if (!select) { return; }
+    var wanted = new URLSearchParams(window.location.search).get("car");
+    if (!wanted) { return; }
+    for (var i = 0; i < select.options.length; i++) {
+        if (select.options[i].value === wanted) {
+            select.selectedIndex = i;
+            break;
+        }
+    }
+})();
