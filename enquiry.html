@@ -73,8 +73,8 @@
             <textarea id="message" name="message" placeholder="Tell us what you would like to know..."></textarea>
         </div>
 
-        <fieldset class="field">
-            <legend>Preferred contact method</legend>
+        <fieldset class="field" role="radiogroup" aria-labelledby="contact-legend">
+            <legend id="contact-legend">Preferred contact method</legend>
             <div class="choice">
                 <input type="radio" id="contact-email" name="contact" value="email">
                 <label for="contact-email">Email</label>
